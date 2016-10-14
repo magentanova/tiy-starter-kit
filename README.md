@@ -1,5 +1,5 @@
 
-![](git@github.com:dorton/tiy-starter-kit.git)
+![](http://i.giphy.com/jADK27n0qKxW0.gif)
 
 
 #TIY Starter Kit
