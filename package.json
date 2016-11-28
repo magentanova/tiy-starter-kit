@@ -4,7 +4,8 @@
   "description": "a lightweight build system for transpiling js & scss, browserifying and running a simple node server. auto-installs backbone and react",
   "main": "index.html",
   "scripts": {
-    "go": "npm run watch && npm run start",
+    "go": "npm-run-all --parallel watch start open",
+    "open": "opn 'http://localhost:3000'",
     "start": "node --use_strict server.js",
     "stop": "bash kill.sh",
     "watch": "npm run watch-js && npm run watch-css && echo '\n\n===== watching js and scss files in src/, writing changes to dist/ =====\n\n'&",
@@ -50,6 +51,8 @@
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "jquery": "^3.0.0",
+    "npm-run-all": "^3.1.0",
+    "opn-cli": "^3.1.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "react": "^15.1.0",
